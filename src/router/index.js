@@ -27,7 +27,7 @@ let routes = [
   {
     path: '/',
     component: Layout,
-    redirect: '/login',
+    // redirect: '/login',
     children: [
       // 404
       {
