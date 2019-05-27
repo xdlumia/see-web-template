@@ -19,7 +19,6 @@ export default {
   name: 'login',
   data () {
     return {
-      remember: true // 是否记住密码
     }
   }
 }
@@ -32,5 +31,4 @@ export default {
 .text500{display: flex; flex-flow: wrap; align-items: center;}
 .text500 p{ line-height: 22px; font-size: 20px; color: #999; margin:20px 0;}
 .ero500{ line-height: 90px; font-size: 90px; color: #636363; }
-.d-login-footer p a{padding: 0 5px; color: rgba(0,0,0,.5); }
 </style>

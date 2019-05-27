@@ -19,7 +19,6 @@ export default {
   name: 'login',
   data () {
     return {
-      remember: true // 是否记住密码
     }
   }
 }

@@ -20,11 +20,13 @@
     "element-ui": "^2.4.5",
     "fingerprintjs2": "^1.6.1",
     "moment": "^2.20.1",
+    "see-web-basic": "^1.1.2",
+    "see-web-system": "^1.1.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1",
-    "see-web-basic": "^1.1.2",
-    "see-web-system": "^1.1.0"
+    "echarts": "^4.2.1",
+    "vue-echarts": "^4.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
