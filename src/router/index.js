@@ -27,7 +27,7 @@ let routes = [
   {
     path: '/',
     component: Layout,
-    redirect: '/system/employee',
+    redirect: '/login',
     children: [
       // 404
       {
@@ -36,24 +36,6 @@ let routes = [
         component: Ero404,
         meta: {
           title: '抱歉，您访问的页面不存在'
-        }
-      },
-      // 403
-      {
-        path: '/403',
-        name: '403',
-        component: Ero403,
-        meta: {
-          title: '抱歉，你无权访问该页面'
-        }
-      },
-      // 500
-      {
-        path: '/500',
-        name: '500',
-        component: Ero500,
-        meta: {
-          title: '抱歉，服务器出错了'
         }
       },
       ...Object.values(systemRoute)

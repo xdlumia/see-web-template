@@ -141,8 +141,6 @@
               </template>
               <el-menu-item @click="logout" index="/login" class="f12">退出</el-menu-item>
             </el-submenu>
-            <!-- 信息 -->
-            <message-list :isLockkScreen="isLockkScreen" class="mr10 fr mt20"></message-list>
             <!-- 版本更新 -->
             <el-submenu index="/version" class="fr head-version">
               <template slot="title">
@@ -154,26 +152,12 @@
         </el-header>
 
         <!-- 中间内容区域 -->
-        <el-main class="scroll-wrap" v-if="iscityList">
+        <el-main class="scroll-wrap">
           <transition mode="out-in">
             <router-view></router-view>
           </transition>
         </el-main>
       </el-container>
-      <!-- 消息提醒 -->
-      <el-dialog
-          title="提醒设置"
-          :visible.sync="messageDialog.visible"
-          v-dialogDrag
-          :close-on-press-escape="false"
-          :close-on-click-modal="false"
-          top="20px"
-          width="900px">
-          <message-edit
-              :dialogInfo="messageDialog"
-              v-if="messageDialog.visible"
-          ></message-edit>
-      </el-dialog>
     </div>
   </d-layout>
 </template>
@@ -193,7 +177,6 @@ export default {
       cityList: [], // 城市列表
       cityInfo: '',
       syslist: [],
-      iscityList: false,
       cityClass: ['ABC', 'DEF', 'GHJ', 'KLM', 'NPQ', 'RST', 'WXYZ'],
       activeName: 'ABC',
       syslistCodeArr: [],
@@ -241,10 +224,6 @@ export default {
         })
       )
     },
-    // 右侧弹出框相关数据。从vuex中读取。
-    messageDialog () {
-      return this.$store.state.messageDialog
-    }
   },
 
   created () {
