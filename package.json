@@ -15,7 +15,7 @@
     "build:product": "node build/build.js product"
   },
   "dependencies": {
-    "awe-dnd": "^0.3.1",
+    "vuedraggable": "^2.19.0",
     "axios": "^0.17.1",
     "element-ui": "^2.4.5",
     "fingerprintjs2": "^1.6.1",
