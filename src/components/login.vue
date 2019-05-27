@@ -95,7 +95,6 @@
 import axios from 'axios'
 import Fingerprint2 from 'fingerprintjs2'
 import { Base64 } from 'js-base64'
-let baseURL = window.g.ApiUrl
 export default {
   name: 'login',
   data () {
