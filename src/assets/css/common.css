@@ -1,1 +1,2 @@
-.main-content{height: calc(100vh - 80px);}
+.el-main{ height: 100%; padding:10px;}
+.main-content{height: calc(100vh - 80px);} 

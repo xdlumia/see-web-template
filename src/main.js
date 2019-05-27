@@ -11,7 +11,7 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
 // 项目主体css
-import './assets/css/common.css'
+import './assets/css/style.css'
 import './api'
 
 import {globalConfig} from 'see-web-basic'
