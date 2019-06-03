@@ -1,2 +1,7 @@
+/* 修改element 默认代码 */
+.el-form-item--small .el-form-item__content{height: 32px;}
+.el-input-group__prepend{ padding:0 10px}
+.el-dialog{margin:0 auto;}
+
 .el-main{ height: 100%; padding:10px;}
 .main-content{height: calc(100vh - 80px);} 
