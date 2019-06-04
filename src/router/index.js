@@ -5,6 +5,7 @@ import {systemRoute} from 'see-web-system'
 
 // 登录
 import Login from '@/components/login'
+import Example from '@/views/example'
 // 框架
 import Layout from '@/components/layout'
 Vue.use(Router)
@@ -24,13 +25,14 @@ let routes = [
     component: Layout,
     // redirect: '/login',
     children: [
-      // 404
+      // 示例页面
       {
-        path: '/404',
-        name: '404',
-        component: Ero404,
+        path: '/example',
+        name: '/example',
+        component: Example,
         meta: {
-          title: '抱歉，您访问的页面不存在'
+          parent: '示例页面',
+          title: '示例页面'
         }
       },
       ...Object.values(systemRoute)
