@@ -13,11 +13,11 @@ import 'element-ui/lib/theme-chalk/index.css'
 // 项目主体css
 import './assets/css/style.css'
 import './api'
-
-import {globalConfig} from 'see-web-basic'
-
 import './utils/verify.js'
-
+import {globalConfig} from 'see-web-basic'
+// see-web-system公共包的vuex 不使用see-web-system可以删除
+import { systemStoreConfig } from 'see-web-system'
+Vue.use(systemStoreConfig)
 Vue.use(VueDND)
 Vue.use(ElementUI)
 Vue.use(globalConfig)

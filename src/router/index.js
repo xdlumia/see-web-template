@@ -1,17 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import systemRoute from 'see-web-system'
+import {systemRoute} from 'see-web-system'
 
 // 登录
 import Login from '@/components/login'
 // 框架
 import Layout from '@/components/layout'
-
-const Ero403 = () => import('@/components/403')
-const Ero404 = () => import('@/components/404')
-const Ero500 = () => import('@/components/500')
-
 Vue.use(Router)
 
 let routes = [
