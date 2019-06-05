@@ -15,10 +15,10 @@
             <el-menu-item class="header-logo pl0" index="/">
               <img
                 class="header-img"
-                :src="require('@/assets/img/alogo.svg')">
+                :src="this.$store.state.company.companyInfo.picUrl?this.$store.state.company.companyInfo.picUrl:require('@/assets/img/alogo.svg')">
               <div class="d-inline">
                 <h3>
-                  <strong>α公寓管理系统</strong>
+                  <strong>{{this.$store.state.company.companyInfo.picName ? this.$store.state.company.companyInfo.picName : 'α公寓管理系统'}}</strong>
                 </h3>
                 <!-- <p> 帮助房地产中介提升企业产能 </p> -->
               </div>
@@ -223,7 +223,7 @@ export default {
           return item.syscode !== this.syscode
         })
       )
-    },
+    }
   },
 
   created () {

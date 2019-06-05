@@ -8,7 +8,6 @@ import seeExternService from './seeExternService.js' // 维护管理
 import bizSystemService from './bizSystemService'
 import seeHouseConfigService from './seeHouseConfigService'
 import seeBaseHouseService from './seeBaseHouseService'
-import seeBaseinfoService from './seeBaseinfoService' // 公司设置
 
 axios.defaults.timeout = 200000
 
@@ -21,8 +20,4 @@ apiConfig.registry({
   bizSystemService,
   seeHouseConfigService,
   seeBaseHouseService
-})
-// 新的api使用方法
-apiConfig.registryConfig({
-  seeBaseinfoService
 })
